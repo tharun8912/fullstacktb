@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 style="font-size: 25px; text-align:center;"><b>Event Registration Form</b></h1>
+    <form align="center">
+    <pre>
+<label for="FullName"   >Full Name:</label><input type="text" placeholder="Enter your name">
+
+<label for="PhoneNumber">Phone Number:</label><input type="text" placeholder="Enter Ph Number">
+
+<label for="email">ENTER Email:</label><input type ="text" placeholder="Enter Email">
+
+<label for="Create PASSWORD">Create PASSWORD:</label><input type ="text" placeholder="Enter PASSWORD">
+
+<label for="ConfirmPassword">Confirm Password:</label><input type ="text" placeholder="Confirm Password">
+</pre>
+<label for ="gender">Gender:</label>
+<input type ="radio" name="gender" value="male">Male
+<input type ="radio" name="gender" value="female">Female
+<input type ="radio" name="gender" value="other">Other
+<br><br>
+<label for=""date of birth">Date of Birth:</label>
+<input type="date" name="dob" required>
+<br><br>
+<label for="time">Time:</label>
+<input type="time" name="time" required>
+<input type="file" name="file" required>
+
+<br><br>
+<button type="submit" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Submit</button>
+<button type="reset" style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Reset</button>
+<h1>Event Details</h1>
+    <div style="border: 2; border-style: solid; border-color: black; padding: 30px;">
+        <label for="event_category">Event Category:</label>
+        <select name="event_category" id="event_category">
+            <option value="disabled selected">please select option</option>
+            <option value="conference">Conference</option>
+            <option value="workshop">Workshop</option>
+            <option value="seminar">Seminar</option>
+            <option value="webinar">Webinar</option>
+        </select>
+    
+    <label>Session Mode</label>
+    <input type="radio" name ="Classes" value="online">Online
+    <input type="radio" name ="Classes" value="offline">offline
+    <br><br>
+    <label name="courses" id="courses" style="font-size: large;">Courses:</label>
+        <input type="checkbox" name="option1" value="option1">ai
+        <input type="checkbox" name="option2" value="option2">data science
+        <input type="checkbox" name="option3" value="option3">web development
+    </label>
+</div>
+</form>
+</body>
+</html>
